@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+  
+</head>
+<body onload="getdatainscreen()">
+    <div class="container">
+        <h1 class="firsth1">Todo App</h1>
+    </div>    
+        
+     <div class="sub">  
+    <input id="inpTask" type="text"/>
+    <button id="Btn" onclick="storedata()">Add Task</button>
+    <button id="upt" onclick=update() class="hidden">Updated</button>
+    </div> 
+    <div class="listofTask">
+      <table id="datastro"></table>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
